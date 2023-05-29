@@ -19,13 +19,14 @@ h1:nth-child(2){
   font-size: 2rem ;
 }
 div{
-  margin-top: 10%;
+  margin-top: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: aliceblue;
   width: 500px;
+  padding: 20px;
 }
 div input{
   display: flex;
@@ -44,5 +45,10 @@ button{
   font-size: 1.3rem;
 }
 input:-ms-input-placeholder{font-size: 1.4rem;}
-input::-webkit-input-placeholder{letter-spacing:16px;}
-input:-moz-placeholder{letter-spacing:16px;}	
+td,th{
+  border: solid 1px black;
+  padding: 5px;
+}
+table{
+  text-align: center;
+}
