@@ -1,34 +1,24 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
+const CounterState = () => {
+const [count, setCount] = useState(0);
+return (
+<div>
+<h1>Contador com useState</h1>
+<p>Count: {count}</p>
+<div>
+<button type="button"
 
-function CalcIMC(){
-    const [peso,Setpeso] = useState(0)
-    const [altura,Setaltura] = useState(0)
-    const [result,Setresult] = useState(0)
+onClick={() => {setCount(count => count + 1)}}>
++
+</button>
+<button type="button"
 
-    const calculoIMC = () => {
-    const imc= peso/(altura*altura)
-    const formatedimc = imc.toFixed(1)
-    Setresult(+formatedimc)
-    }
+onClick={() => {setCount(count => count - 1)}}>
+-
+</button>
+</div>
 
-    return(
-        <div>
-            <input 
-            type="number" 
-            placeholder="PESO (KG)" 
-            onChange={(e) => Setpeso(+e.target.value)} 
-            value={peso} />
-
-            <input 
-            type="number"
-            placeholder="ALTURA (M)" 
-            onChange={(e) => Setaltura(+e.target.value)} 
-            value={altura} />
-            
-            <button onClick={calculoIMC}>Calcular</button>
-            <h1>{result}</h1>
-        </div>
-    )
-}
-export default CalcIMC
+</div>
+);
+};
+export default CounterState;
