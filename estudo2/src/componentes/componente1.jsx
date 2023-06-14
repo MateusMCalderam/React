@@ -1,24 +1,14 @@
-import React, { useState } from 'react';
-const CounterState = () => {
-const [count, setCount] = useState(0);
-return (
-<div>
-<h1>Contador com useState</h1>
-<p>Count: {count}</p>
-<div>
-<button type="button"
 
-onClick={() => {setCount(count => count + 1)}}>
-+
-</button>
-<button type="button"
 
-onClick={() => {setCount(count => count - 1)}}>
--
-</button>
-</div>
+function Pessoa(props) {
+    return(
+        <div>
+            <h2>Adicionado via Props</h2>
+            <p>Nome: {props.nome}</p>
+            <p>Idade: {props.idade}</p>
+            <p>Profissão {props.profissão}</p>
+        </div>
+    )
+}
 
-</div>
-);
-};
-export default CounterState;
+export default Pessoa 
