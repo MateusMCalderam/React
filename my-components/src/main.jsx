@@ -5,6 +5,7 @@ import {CompA, CompB as B} from './componentes/DoisComponentes';
 import MultiElementos from './componentes/MultiElementos';
 import ComponenteClasse from './componentes/ComponenteClasse';
 import ComponenteComFuncao from './componentes/ComponenteComFuncao';
+import Provider from './componentes/comtext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,7 +16,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </div>
     <MultiElementos/> 
     <ComponenteClasse valor="Esse é o valor passado dentro do props em um Componente Classe"/>
-
     <ComponenteComFuncao/> 
+
+    <Provider value={color: 'blue'}>
+      {children}
+    </Provider>
   </React.StrictMode>
 )
