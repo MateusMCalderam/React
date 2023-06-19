@@ -18,7 +18,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ComponenteClasse valor="Esse é o valor passado dentro do props em um Componente Classe"/>
     <ComponenteComFuncao/> 
 
-    <Provider value={color: 'blue'}>
+    <Provider value={color:'blue'}>
       {children}
     </Provider>
   </React.StrictMode>
