@@ -9,6 +9,9 @@ import Buttun from './componentes/button'
 import Condicional from './componentes2/Condicionais'
 
 function App() {
+
+  const meusItens = ['React','Vue','Angular',{framework: 'X', }]
+
   return (
     <div>
       {/*<h1>Olá Mundo</h1>
@@ -20,9 +23,10 @@ function App() {
       <List />
       <h1>Testando Eventos</h1>
       <Eventos/>
-      <Form />*/}
-      <h1>Renderizando Condicional</h1>
-      <Condicional />
+      <Form />
+      <Condicional />*/}
+      <h1>Renderizando de Listas</h1>
+      
       </div>
   )
 }
